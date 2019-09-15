@@ -10,5 +10,8 @@ public class SecondTask {
         System.out.println("Subtract: " + Points.subtract(firstPoint, secondPoint).x + ' ' + Points.subtract(firstPoint, secondPoint).y + ' ' + Points.subtract(firstPoint, secondPoint).z);
         System.out.println("Multiply: " + Points.multiply(firstPoint, secondPoint).x + ' ' + Points.multiply(firstPoint, secondPoint).y + ' ' + Points.multiply(firstPoint, secondPoint).z);
         System.out.println("Divide: " + Points.divide(firstPoint, secondPoint).x + ' ' + Points.divide(firstPoint, secondPoint).y + ' ' + Points.divide(firstPoint, secondPoint).z);
+
+        //#1.5 task
+        System.out.println("Multiplication firstPoint by number=5: " + Points.enlarge(firstPoint, 5).x + ' ' + Points.enlarge(firstPoint, 5).y + ' ' + Points.enlarge(firstPoint, 5).z);
     }
 }

@@ -20,4 +20,8 @@ public class Points {
     private Points() {
 
     }
+
+    public static Point enlarge(Point obj, double factor) {
+        return new Point(obj.x * factor, obj.y * factor, obj.z * factor);
+    }
 }
