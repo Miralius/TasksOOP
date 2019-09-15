@@ -13,5 +13,9 @@ public class SecondTask {
 
         //#1.5 task
         System.out.println("Multiplication firstPoint by number=5: " + Points.enlarge(firstPoint, 5).x + ' ' + Points.enlarge(firstPoint, 5).y + ' ' + Points.enlarge(firstPoint, 5).z);
+
+        //#1.6 task
+        System.out.println("Length of radius vector #1: " + Points.length(firstPoint));
+        System.out.println("Length of radius vector #2: " + Points.length(secondPoint));
     }
 }
