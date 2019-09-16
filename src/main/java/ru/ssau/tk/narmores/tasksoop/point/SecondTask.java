@@ -17,5 +17,9 @@ public class SecondTask {
         //#1.6 task
         System.out.println("Length of radius vector #1: " + Points.length(firstPoint));
         System.out.println("Length of radius vector #2: " + Points.length(secondPoint));
+
+        //#1.7 task
+        System.out.println("Opposite of #1 point: " + Points.opposite(firstPoint).x + ' ' + Points.opposite(firstPoint).y + ' ' + Points.opposite(firstPoint).z);
+        System.out.println("Inverse of #1 point: " + Points.inverse(firstPoint).x + ' ' + Points.inverse(firstPoint).y + ' ' + Points.inverse(firstPoint).z);
     }
 }
