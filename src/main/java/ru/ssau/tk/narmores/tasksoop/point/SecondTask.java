@@ -21,5 +21,9 @@ public class SecondTask {
         //#1.7 task
         System.out.println("Opposite of #1 point: " + Points.opposite(firstPoint).x + ' ' + Points.opposite(firstPoint).y + ' ' + Points.opposite(firstPoint).z);
         System.out.println("Inverse of #1 point: " + Points.inverse(firstPoint).x + ' ' + Points.inverse(firstPoint).y + ' ' + Points.inverse(firstPoint).z);
+
+        //#.18 task
+        System.out.println("Vector product: " + Points.vectorProduct(firstPoint, secondPoint).x + ' ' + Points.vectorProduct(firstPoint, secondPoint).y + ' ' + Points.vectorProduct(firstPoint, secondPoint).z);
+        System.out.println("Scalar product: " + Points.scalarProduct(firstPoint, secondPoint));
     }
 }
