@@ -1,6 +1,11 @@
 package ru.ssau.tk.narmores.tasksoop.point;
 
 public class Points {
+
+    private Points() {
+
+    }
+
     public static Point sum(Point firstObj, Point secondObj) {
         return new Point(firstObj.x + secondObj.x, firstObj.y + secondObj.y, firstObj.z + secondObj.z);
     }
@@ -15,10 +20,6 @@ public class Points {
 
     public static Point divide(Point firstObj, Point secondObj) {
         return new Point(firstObj.x / secondObj.x, firstObj.y / secondObj.y, firstObj.z / secondObj.z);
-    }
-
-    private Points() {
-
     }
 
     public static Point enlarge(Point obj, double factor) {
