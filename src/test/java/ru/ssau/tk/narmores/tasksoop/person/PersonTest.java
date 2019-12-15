@@ -30,28 +30,35 @@ public class PersonTest {
 
     Person firstObj = new Person();
     Person secondObj = new Person("Natalia", "Pavlova");
-    Person thirdObj = new Person(null, null, 123456);
+    Person omgObj = new Person(null, null, 123456);
+    Person thirdObj = new Person(null, null, 123456, Gender.MALE);
     Person fourthObj = new Person(123456);
+    Person femaleObj = new Person(Gender.FEMALE);
 
     @Test
     public void testFirstNameMethods() {
         firstObj.setFirstName("Anton");
         secondObj.setFirstName(null);
         thirdObj.setFirstName("Anna");
+        femaleObj.setFirstName("Elizaveta");
         assertEquals(firstObj.getFirstName(), "Anton");
         assertNull(secondObj.getFirstName());
+        assertNull(omgObj.getFirstName());
         assertEquals(thirdObj.getFirstName(), "Anna");
         assertNull(fourthObj.getFirstName());
+        assertEquals(femaleObj.getFirstName(), "Elizaveta");
     }
 
     @Test
     public void testLastNameMethods() {
         thirdObj.setLastName("Frolova");
         fourthObj.setLastName(null);
+        femaleObj.setLastName("Dolgova");
         assertNull(firstObj.getLastName());
         assertEquals(secondObj.getLastName(), "Pavlova");
         assertEquals(thirdObj.getLastName(), "Frolova");
         assertNull(fourthObj.getLastName());
+        assertEquals(femaleObj.getLastName(), "Dolgova");
     }
 
     @Test
@@ -62,5 +69,18 @@ public class PersonTest {
         assertEquals(secondObj.getPassportId(), 742782);
         assertEquals(thirdObj.getPassportId(), 123456);
         assertEquals(fourthObj.getPassportId(), 697583);
+    }
+
+    @Test
+    public void testSetGetGender() {
+        firstObj.setGender(Gender.MALE);
+        secondObj.setGender(Gender.FEMALE);
+        thirdObj.setGender(Gender.FEMALE);
+        assertEquals(firstObj.getGender(), Gender.MALE);
+        assertEquals(secondObj.getGender(), Gender.FEMALE);
+        assertNull(omgObj.getGender());
+        assertEquals(thirdObj.getGender(), Gender.FEMALE);
+        assertNull(fourthObj.getGender());
+        assertEquals(femaleObj.getGender(), Gender.FEMALE);
     }
 }
