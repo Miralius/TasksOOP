@@ -1,6 +1,6 @@
 package ru.ssau.tk.narmores.tasksoop.point;
 
-public class NamedPoint extends Point {
+public class NamedPoint extends Point implements Resettable {
 
     private String name;
 
@@ -15,6 +15,11 @@ public class NamedPoint extends Point {
 
     public NamedPoint() {
         this(0, 0, 0, "Origin");
+    }
+
+    @Override
+    public void reset() {
+        this.name = "Absent";
     }
 
     public String getName() {
