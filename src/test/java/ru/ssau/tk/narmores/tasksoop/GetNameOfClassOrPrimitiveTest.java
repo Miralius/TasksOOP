@@ -3,8 +3,6 @@ package ru.ssau.tk.narmores.tasksoop;
 import org.testng.annotations.Test;
 import ru.ssau.tk.narmores.tasksoop.person.Person;
 
-import static org.testng.Assert.*;
-
 public class GetNameOfClassOrPrimitiveTest {
 
     @Test
